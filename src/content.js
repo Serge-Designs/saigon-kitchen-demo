@@ -1,111 +1,97 @@
-/* ═══════════════════════════════════════════════════════════
-   SITE CONTENT — ✏️ EDIT THIS FILE FOR EACH CLIENT
-   
-   All restaurant-specific info lives here.
-   Change this file + swap images in /public/images/ and
-   the entire site updates. No need to touch components.
-   ═══════════════════════════════════════════════════════════ */
-
 const siteContent = {
-
-  // ─── RESTAURANT INFO ───
-  name: "Saigon Kitchen",          // Used in nav, footer, title
-  nameAccent: "Kitchen",           // The word that gets the gold italic treatment
-  tagline: "12-hour simmered broths. Fresh herbs. Handmade noodles. A taste of Vietnam in every bowl.",
-  cuisine: "Authentic Vietnamese",
+  name: "Ember & Bloom",
+  nameAccent: "Bloom",
+  tagline: "Craft coffee & scratch-baked pastries in the heart of Roseville.",
+  cuisine: "Specialty Coffee & Bakery",
   location: "Roseville, CA",
-  established: "2026",
+  established: "2024",
 
-  // ─── CONTACT ───
   address: {
-    street: "9999 Pleasant Grove Blvd",
-    suite: "Suite 999",
-    city: "Roseville, CA 95747",
+    street: "1240 Galleria Blvd",
+    suite: "Suite 120",
+    city: "Roseville, CA 95678",
   },
-  phone: "(916) 111-1111",
-  email: "hello@saigonkitchen.com",
+  phone: "(916) 555-0142",
+  email: "hello@emberandbloom.com",
 
-  // ─── HOURS ───
   hours: [
-    "Monday – Thursday: 10am – 9pm",
-    "Friday – Saturday: 10am – 10pm",
-    "Sunday: 10am – 8pm",
+    "Monday – Friday: 6am – 6pm",
+    "Saturday: 7am – 5pm",
+    "Sunday: 7am – 3pm",
   ],
 
-  // ─── ABOUT ───
-  aboutHeading: "Slow-simmered with",
-  aboutAccent: "love & tradition",
+  aboutHeading: "Roasted with care,",
+  aboutAccent: "baked from scratch",
   aboutText: [
-    "Our phở starts before sunrise — beef bones, charred ginger, and whole spices go into the pot at 4 a.m. By the time you sit down, each bowl holds 12 hours of patient craft.",
-    "Every herb is hand-picked. Every chili is fresh-cut. This is how our family has cooked for three generations — and how we cook for yours.",
+    "We source single-origin beans from small farms in Colombia, Ethiopia, and Guatemala — roasted in small batches right here in Roseville. Every shot is dialed in fresh each morning.",
+    "Our pastry case is filled before sunrise: butter croissants, fruit danishes, and our famous cardamom morning bun. Everything made by hand, nothing from a mix.",
   ],
 
-  // ─── IMAGES ───
-  // For production: put images in /public/images/ and reference as "/images/hero.jpg"
-  // For now using external URLs as placeholders
   images: {
-    hero: "https://as2.ftcdn.net/jpg/04/39/56/23/1000_F_439562347_8UsuF9ByzTbCBabsrUCahbVzqm9GPHDN.jpg",
-    about1: "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=800&q=80",
-    about2: "ttps://as2.ftcdn.net/jpg/04/39/56/23/1000_F_439562347_8UsuF9ByzTbCBabsrUCahbVzqm9GPHDN.jpg",
-    about3: "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=800&q=80",
-    interior: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80",
-    dish1: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pho-Beef-Noodles-2008.jpg/1280px-Pho-Beef-Noodles-2008.jpg",
-    dish2: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800&q=80",
-    dish3: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800&q=80",
+    hero: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=900&q=80",
+    about1: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800&q=80",
+    about2: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80",
+    about3: "https://images.unsplash.com/photo-1486427944544-d2c246c4df4e?w=800&q=80",
+    interior: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&q=80",
   },
 
-  // ─── SIGNATURE DISHES (shown as photo cards) ───
-  signatureDishes: [
-    { image: "dish1", name: "Phở Đặc Biệt", desc: "Our signature combination pho — the full experience" },
-    { image: "dish2", name: "12-Hour Bone Broth", desc: "Simmered low and slow with charred ginger, star anise & cinnamon" },
-    { image: "dish3", name: "Bún Bò Huế", desc: "Spicy, bold, aromatic — the beloved noodle soup of central Vietnam" },
+  featuredDrinks: [
+    { name: "Lavender Oat Latte", price: "6.50", desc: "House-pulled espresso, oat milk, French lavender syrup", image: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&q=80" },
+    { name: "Honey Cinnamon Cortado", price: "5.50", desc: "Double shot, steamed whole milk, raw honey, Ceylon cinnamon", image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefda?w=600&q=80" },
+    { name: "Rose Cold Brew", price: "6.00", desc: "24-hour cold brew, rose water, cardamom, cream float", image: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80" },
+    { name: "Matcha & Vanilla", price: "6.50", desc: "Ceremonial-grade matcha, vanilla bean, oat milk", image: "https://images.unsplash.com/photo-1536256263959-770b48d82b0a?w=600&q=80" },
+    { name: "Espresso Tonic", price: "5.50", desc: "Double espresso over tonic water, fresh citrus peel", image: "https://images.unsplash.com/photo-1504630083234-14187a9df0f5?w=600&q=80" },
+    { name: "Maple Butter Latte", price: "6.50", desc: "Espresso, brown butter syrup, Vermont maple, whole milk", image: "https://images.unsplash.com/photo-1485808191679-5f86510681a2?w=600&q=80" },
   ],
 
-  // ─── MENU ───
   menuCategories: [
-    { id: "pho", label: "Phở" },
-    { id: "appetizers", label: "Appetizers" },
-    { id: "bowls", label: "Noodles & Rice" },
-    { id: "drinks", label: "Drinks" },
+    { id: "espresso", label: "Espresso" },
+    { id: "brewed", label: "Brewed & Specialty" },
+    { id: "pastries", label: "Pastries" },
+    { id: "food", label: "Kitchen" },
   ],
 
   menuItems: {
-    pho: [
-      { name: "Phở Tái", desc: "Rare sliced beef, rice noodles, 12-hour bone broth", price: "16", popular: true },
-      { name: "Phở Tái Nạm", desc: "Rare beef & well-done flank in aromatic broth", price: "17" },
-      { name: "Phở Gà", desc: "Free-range chicken, fresh herbs, bean sprouts", price: "15" },
-      { name: "Phở Bò Viên", desc: "House-made beef meatballs, star anise broth", price: "15" },
-      { name: "Phở Đặc Biệt", desc: "The works — rare beef, flank, tendon, tripe, meatball", price: "19", popular: true },
-      { name: "Phở Chay", desc: "Vegetable broth, tofu, mushrooms, bok choy", price: "14" },
+    espresso: [
+      { name: "Espresso", desc: "Single or double shot, house blend", price: "3.50 / 4.50", popular: false },
+      { name: "Cortado", desc: "Double shot, equal parts steamed milk", price: "5.00", popular: true },
+      { name: "Flat White", desc: "Double ristretto, velvety microfoam", price: "5.50", popular: false },
+      { name: "Cappuccino", desc: "Classic — espresso, steamed milk, thick foam", price: "5.50", popular: false },
+      { name: "Latte", desc: "Espresso, steamed milk. Add flavor +$0.75", price: "5.50", popular: true },
+      { name: "Americano", desc: "Double espresso, hot water", price: "4.50", popular: false },
+      { name: "Mocha", desc: "Espresso, house chocolate, steamed milk, whip", price: "6.00", popular: false },
     ],
-    appetizers: [
-      { name: "Gỏi Cuốn", desc: "Fresh spring rolls — shrimp, pork, vermicelli, herbs (2 pcs)", price: "8", popular: true },
-      { name: "Chả Giò", desc: "Crispy imperial rolls, nuoc cham dipping sauce (4 pcs)", price: "9" },
-      { name: "Bánh Mì Thịt", desc: "Grilled pork, pâté, pickled daikon, cilantro, jalapeño", price: "12" },
-      { name: "Cánh Gà Chiên", desc: "Crispy fish-sauce wings, lime, chili garlic", price: "13" },
+    brewed: [
+      { name: "Drip Coffee", desc: "Rotating single-origin, brewed fresh hourly", price: "3.50", popular: false },
+      { name: "Pour Over", desc: "Hand-poured V60, ask about today's beans", price: "5.50", popular: true },
+      { name: "Cold Brew", desc: "24-hour steeped, smooth & strong", price: "5.50", popular: true },
+      { name: "Chai Latte", desc: "House-spiced chai concentrate, steamed milk", price: "5.50", popular: false },
+      { name: "Matcha Latte", desc: "Ceremonial-grade matcha, your choice of milk", price: "6.00", popular: false },
+      { name: "Hot Chocolate", desc: "Belgian chocolate, steamed milk, marshmallow", price: "5.00", popular: false },
     ],
-    bowls: [
-      { name: "Bún Bò Huế", desc: "Spicy lemongrass beef noodle soup, pork knuckle", price: "17", popular: true },
-      { name: "Bún Thịt Nướng", desc: "Grilled pork over vermicelli, egg roll, herbs, nuoc cham", price: "16" },
-      { name: "Cơm Tấm", desc: "Broken rice, grilled pork chop, egg cake, pickled vegetables", price: "15" },
-      { name: "Bún Chả", desc: "Hanoi-style grilled pork patties, vermicelli, fresh herbs", price: "16" },
+    pastries: [
+      { name: "Butter Croissant", desc: "Laminated by hand, 72-hour ferment", price: "4.50", popular: true },
+      { name: "Cardamom Morning Bun", desc: "Our signature — cardamom sugar, orange zest", price: "5.00", popular: true },
+      { name: "Almond Croissant", desc: "Filled with frangipane, toasted almond flakes", price: "5.50", popular: false },
+      { name: "Blueberry Scone", desc: "Buttermilk scone, fresh blueberries, lemon glaze", price: "4.50", popular: false },
+      { name: "Pain au Chocolat", desc: "Dark chocolate batons, flaky pastry", price: "5.00", popular: false },
+      { name: "Seasonal Danish", desc: "Ask about today's fruit danish", price: "5.00", popular: false },
     ],
-    drinks: [
-      { name: "Cà Phê Sữa Đá", desc: "Vietnamese iced coffee, condensed milk", price: "6", popular: true },
-      { name: "Trà Đá Chanh", desc: "Iced lime tea, fresh mint", price: "4" },
-      { name: "Sinh Tố Bơ", desc: "Avocado smoothie, condensed milk", price: "7" },
-      { name: "Nước Chanh Muối", desc: "Salted preserved lime soda", price: "5" },
+    food: [
+      { name: "Avocado Toast", desc: "Sourdough, smashed avo, chili flake, pickled onion, egg", price: "12.00", popular: true },
+      { name: "Breakfast Sandwich", desc: "Fried egg, cheddar, bacon, herb aioli, brioche bun", price: "11.00", popular: true },
+      { name: "Granola Bowl", desc: "House granola, Greek yogurt, seasonal fruit, honey", price: "9.00", popular: false },
+      { name: "Caprese Panini", desc: "Fresh mozzarella, tomato, basil pesto, ciabatta", price: "12.00", popular: false },
+      { name: "Quiche of the Day", desc: "Rotating — ask your barista", price: "8.00", popular: false },
     ],
   },
 
-  // ─── ATMOSPHERE SECTION ───
-  atmosphereHeading: "Come as you are.",
-  atmosphereAccent: "Stay for the broth.",
-  atmosphereTags: "Casual dining · Family friendly · Takeout available",
+  atmosphereHeading: "Pull up a chair.",
+  atmosphereAccent: "Stay a while.",
+  atmosphereTags: "Free WiFi · Dog-friendly patio · Rotating local art",
 
-  // ─── ORDER BUTTONS (set to null to hide) ───
-  orderPickupUrl: "#",   // Replace with Toast/Square/DoorDash link
-  orderDeliveryUrl: "#", // Replace with delivery link
+  orderPickupUrl: "#",
+  orderDeliveryUrl: "#",
 };
 
 export default siteContent;
