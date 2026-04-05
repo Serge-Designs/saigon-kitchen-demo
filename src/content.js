@@ -18,11 +18,11 @@ const siteContent = {
 
   // ─── CONTACT ───
   address: {
-    street: "9999 Pleasant Grove Blvd",
-    suite: "Suite 999",
+    street: "1234 Roseville Rd.",
+    suite: "",
     city: "Roseville, CA 95747",
   },
-  phone: "(916) 111-1111",
+  phone: "(916) 832-0195",
   email: "hello@saigonkitchen.com",
 
   // ─── HOURS ───
